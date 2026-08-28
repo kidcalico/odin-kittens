@@ -17,6 +17,9 @@
     <li>
       <%= link_to "View #{kitten.name}", kitten %>
     </li>
+    <li>
+      <%= link_to "Delete #{kitten.name}", kitten, data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to delete #{kitten.name}?" } %>
+    </li>
   </ul>
 <% end %>
 

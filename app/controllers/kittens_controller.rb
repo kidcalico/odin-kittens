@@ -36,7 +36,7 @@ class KittensController < ApplicationController
   def destroy
     @kitten = Kitten.find(params[:id])
     if @kitten.destroy
-      redirect_to kittens_path
+      redirect_to kittens_path, alert: "#{@kitten.name} was successfully deleted."
     else
       render :edit, status: :unprocessable_entity, alert:  "Please try again, there was an error."
     end

@@ -8,3 +8,16 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+.alert {
+  margin: 5px;
+  padding: 5px;
+  background-color: lightcoral;
+  color: red;
+}
+.notice {
+  margin: 5px;
+  padding: 5px;
+  background-color: greenyellow;
+  color: green;
+}

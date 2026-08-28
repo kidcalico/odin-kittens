@@ -1,0 +1,23 @@
+<h1>Kittens Index!</h1>
+
+<% @kittens.each do |kitten| %>
+  <ul>
+    <li>
+      Name: <%= kitten.name %>
+    </li>
+    <li>
+      Age: <%= kitten.age %>
+    </li>
+    <li>
+      Cuteness: <%= kitten.cuteness %>
+    </li>
+    <li>
+      Softness: <%= kitten.softness %>
+    </li>
+    <li>
+      <%= link_to "View #{kitten.name}", kitten %>
+    </li>
+  </ul>
+<% end %>
+
+<%= link_to "New Kitten", new_kitten_path %>

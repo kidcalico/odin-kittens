@@ -1,0 +1,12 @@
+<h1><%= @kitten.name %></h1>
+
+<ul>
+  <li>Name: <%= @kitten.name %></li>
+  <li>Age: <%= @kitten.age %></li>
+  <li>Cuteness: <%= @kitten.cuteness %></li>
+  <li>Softness: <%= @kitten.softness %></li>
+</ul>
+
+<%= link_to "Edit #{@kitten.name}", edit_kitten_path %>
+
+<%= link_to "Kittens Index", kittens_path %>
